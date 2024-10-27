@@ -28,44 +28,6 @@ pcall(function()
     game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
 end)
 
-local player = game.Players.LocalPlayer
-local backpack = player:WaitForChild("Backpack")
-local character = player:WaitForChild("Character") or player.CharacterAdded:Wait()
-
-local isAutoSofaActive = false -- Variável para controlar o estado do loop
-
-local function equipCouch()
-    local couchItem = backpack:FindFirstChild("Couch")
-    if couchItem then
-        couchItem.Parent = character
-    else
-        warn("Couch não encontrado na mochila.")
-    end
-end
-
--- Função que executa o loop para equipar o sofá
-local function autoEquipSofa()
-    while isAutoSofaActive do
-        equipCouch()
-        wait(0) -- Ajuste o tempo de espera conforme necessário
-    end
-end
-
--- Evento que detecta mensagens no chat
-player.Chatted:Connect(function(message)
-    if message == ".autosofa" then
-        if not isAutoSofaActive then
-            isAutoSofaActive = true
-            autoEquipSofa() -- Inicia o loop de equipar o sofá
-        end
-    elseif message == ".unsofa" then
-        isAutoSofaActive = false -- Para o loop
-    end
-end)
-
-print("BY CLEITI6966 SE VOCÊ QUER ROUBAR O CÓDIGO EU FAÇO SCRIPT SO CARA VC NAO TEM PENA")
-print("Carregado com sucesso")
-
 --[[
  .____                  ________ ___.    _____                           __                
  |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
@@ -97,15 +59,3 @@ StarterGui:SetCore("SendNotification", {
     Icon = avatarUrl,
     Duration = 5
 })
-
-local TextChat = "use .autosofa para equipar o sofa em loop"
-
-pcall(function()
-    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
-end)
-
-local TextChat = "use .unautodofa para parar o loop de equipar o sofa"
-
-pcall(function()
-    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
-end)

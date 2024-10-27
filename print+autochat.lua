@@ -1,8 +1,16 @@
-print("SE VC QUER ROUBAR O CÓDIGO EU FAÇO SCRIPT SEM AMIGOS OK")
+print("SE VC QUER ROUBAR O CÓDIGO EU FAÇO SCRIPT SEM AMIGOS OK CLEITI6966 HUBS BROOKHAVEN")
 
 wait(0)
 
 local TextChat = "Carregado com sucesso"
+
+pcall(function()
+    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
+end)
+
+wait(0)
+
+local TextChat = "BY CLEITI6966"
 
 pcall(function()
     game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)

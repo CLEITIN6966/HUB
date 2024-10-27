@@ -66,8 +66,6 @@ end)
 print("BY CLEITI6966 SE VOCÊ QUER ROUBAR O CÓDIGO EU FAÇO SCRIPT SO CARA VC NAO TEM PENA")
 print("Carregado com sucesso")
 
---se você esta lendo e queria roubar o código por favor mano sou sem amigos faço script só você nao tem pena cara
-
 --[[
  .____                  ________ ___.    _____                           __                
  |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 

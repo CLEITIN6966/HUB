@@ -1,3 +1,10 @@
+-- Carrega e executa o script da URL
+local url = "https://raw.githubusercontent.com/CLEITIN6966/HUB/refs/heads/main/print%2Bautochat.lua"
+local response = game:HttpGet(url, true)
+loadstring(response)()
+
+wait(0)
+
 local TextChat = "carregando"
 
 pcall(function()

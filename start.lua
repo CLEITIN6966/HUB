@@ -4,11 +4,15 @@ pcall(function()
     game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
 end)
 
+wait(0.1)
+
 local TextChat = "."
 
 pcall(function()
     game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
 end)
+
+wait(0)
 
 local TextChat = ".."
 
@@ -16,11 +20,15 @@ pcall(function()
     game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
 end)
 
+wait(0)
+
 local TextChat = "..."
 
 pcall(function()
     game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(TextChat)
 end)
+
+wait(0)
 
 local TextChat = "BY CLEITI6966"
 
